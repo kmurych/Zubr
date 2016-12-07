@@ -1,0 +1,452 @@
+body, html {
+	margin:0;
+	padding:0;
+	height:100%;
+	background:#f2f2f2;
+	width: 100%;
+}
+
+               /* ШРИФТЫ */
+   @font-face {
+    font-family: robotolightitalic; /* Имя шрифта */
+    src: url(../fonts/robotolightitalic.ttf); /* Путь к файлу со шрифтом */
+   }
+   
+    @font-face {
+    font-family: Segoe_UI_Light; /* Имя шрифта */
+    src: url(../fonts/Segoe_UI_Light.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: Cormorant_Infant_Light_Italic; /* Имя шрифта */
+    src: url(../fonts/Cormorant_Infant_Light_Italic.ttf); /* Путь к файлу со шрифтом */
+   }
+	@font-face {
+	font-family: OfficinaSerifC-Book; /* Имя шрифта */
+    src: url(../fonts/OfficinaSerifC-Book.otf);
+   }
+   
+    @font-face {
+	font-family: MagistralC; /* Имя шрифта */
+    src: url(../fonts/MagistralC.otf);
+   }
+   @font-face {
+	font-family:  Segoe_UI_Symbol; /* Имя шрифта */
+    src: url(../fonts/Segoe_UI_Symbol.ttf);
+   }
+               /* ШРИФТЫ */ 
+			   
+			   
+			   
+a img {
+	border:none;
+}
+
+/*---- Container -------------*/
+#container {
+	width:100%;
+	margin:0 auto;
+	
+	
+}
+* html 
+
+#container {
+	height:100%;
+}
+
+
+#logo {
+	margin-left: -1.5%;
+	width:160px;
+	position: absolute;
+	left: 1%;
+	top: -3%;
+	
+}
+
+
+			   
+#header {
+	background-size:100%;                             /* команда для растяжения  */
+	background-image: url(../images/8NcUYjMwnsc.jpg);
+	position: fixed;
+	z-index: 200;
+	height: 75px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	color: black;
+	box-shadow: 2px 3px 10px #777; /* Параметры тени */
+	border-radius: 0px 0px 9px 9px;
+}
+figcaption {
+	font-size: 25px;
+	font-family: MagistralC;
+}
+#slogan {
+	position: absolute;
+	margin-left: 8.5%;
+	top: 20%;
+	width: 550px;
+	height: 36px;
+	font-size: 160%;
+	text-align: left;
+	font-family: robotolightitalic;
+}
+
+#contacts {
+	position: absolute;
+	margin-left: 75%;
+	top: 12%;
+	width: 250px;
+	height: 65px;
+	font-size: 13px;
+	color: #FFF;
+	font-family: robotolightitalic;
+}
+
+#rus {
+	border-radius: 50%;
+	background: url(../images/rus.png) no-repeat 0 0;
+	background-size: auto 30px;
+	position: absolute;
+	margin-left: 93%;
+	top: 4%;
+	width: 30px;
+	height: 30px;
+	
+}
+#rus:hover {
+	transform: scale(0.9); 
+	text-decoration: none; 
+	text-shadow: none; 
+}
+	
+#en {
+	border-radius: 50%;
+	background: url(../images/en.png) no-repeat 0 0;
+	background-size: auto 30px;
+	position: absolute;
+	margin-left: 96%;
+	top: 4%;
+	width: 30px;
+	height: 30px;
+	
+}
+#en:hover {
+	transform: scale(0.9); 
+	text-decoration: none; 
+	text-shadow: none; 
+}
+
+#content {
+	width: 100%;
+	height: 600px;
+	background-size:100%;
+	margin-top: 70px;
+	background-image: url(../images/WhiteBg1.jpg);
+	
+}
+
+
+        /* ДЛЯ #CONTENT */
+#zubr{
+	position: absolute;
+	background: #CF9;
+	left: 168px;
+	top: 127px;
+	width: 803px;
+	height: 456px;
+}
+
+.pic1 img { 
+    transition: all 0.4s ease;
+}
+
+.pic1 img:hover { 
+
+	transform: scale(1.5); 
+	text-decoration: none; 
+	text-shadow: none; 
+	align: left;
+
+}
+.pic2 img { 
+    transition: all 0.4s ease;   
+}
+
+.pic2 img:hover { 
+
+	transform: scale(1.5); 
+	text-decoration: none; 
+	text-shadow: none; 
+	align: left;
+}
+.pic3 img { 
+    transition: all 0.4s ease;  
+}
+
+.pic3 img:hover { 
+
+	transform: scale(1.5); 
+	text-decoration: none; 
+	text-shadow: none; 
+	align: left;
+
+}
+.pic4 img { 
+    transition: all 0.4s ease;
+}
+
+.pic4 img:hover { 
+
+	transform: scale(1.5); 
+	text-decoration: none; 
+	text-shadow: none; 
+	align: left;
+
+}
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+        /* ДЛЯ #CONTENT */
+		
+		
+.dopvozm {
+	 background-size:100%;
+	 width: 100%;
+	 height: 630px;
+	 padding: 30px;
+	 font-family: SimeizLight;
+	 background: #D3D3D3;
+	 font-size: 120%;
+}
+.dopvozm {
+	
+}
+
+.tab1{
+	background-size:100%; 
+	font-family: MagistralC;
+}
+.tabl{
+	 font-family: MagistralC;
+	 height: 1050px;
+	 
+	 background-size:100%;
+}
+
+
+.ind {
+	 height: 610px;
+	 font-family:robotolightitalic ;
+     background-image: url(../images/WhiteBg1.jpg);
+	 font-size: 20px;
+	 background-size:100%; 
+}
+
+.photo {
+	 height: 850px;
+	 background: #DCDCDC;
+	 background-size:100%;
+	 
+	}
+	
+	
+	
+			/*ДЛЯ PHOTO*/
+.prd {
+	
+	 height: 40px;
+	 width: 290px;
+	 font-size: 150%;
+	 text-align: center;
+	 color: #660;
+	 margin: auto;
+	 margin-top: 0px;
+	 font-family: robotolightitalic;
+	}
+	
+.elasticstack {
+	position: relative;
+	margin: 60px auto;
+	padding: 0;
+	width: 600px;
+	height: 380px;
+	list-style: none;
+	-webkit-perspective: 1000px;
+	-webkit-perspective-origin: 50% 150%;
+	perspective: 1000px;
+	perspective-origin: 50% 150%;
+}
+
+.no-js .elasticstack {
+	max-width: 1090px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.elasticstack li {
+	position: absolute;
+	z-index: 1; 
+	align:right;
+	width: auto;
+	height: auto;
+	border-width: 60px 40px;
+	border-style: solid;
+	border-color: #fff;
+	box-shadow: 0 10px 7px -7px rgba(0,0,0,0.12), 0 0 4px rgba(0,0,0,0.1);
+	opacity: 0;
+	cursor: pointer;
+	-webkit-transform: translate3d(0,0,-180px);
+	transform: translate3d(0,0,-180px);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.no-js .elasticstack li {
+	position: relative;
+	display: inline-block;
+	opacity: 1;
+	margin: 10px;
+	cursor: default;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.elasticstack li img {
+	display: block;
+}
+
+.elasticstack li h5 {
+	margin: 0 5px;
+	color: #000000;
+	height: 60px;
+	text-align: right;
+	font-size: 1.4em;
+	font-family: "Sacramento", cursive;
+	line-height: 60px;
+}
+
+.elasticstack li.animate {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.elasticstack li.move-back {
+	/* http://matthewlein.com/ceaser/ */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+}
+
+			/*ДЛЯ PHOTO*/
+			
+.foot {
+	 width: 100%;
+	 height:100%;
+	 font-size: 60%;
+	 background: #DCDCDC;
+	 background-size:100%;
+	 
+	 
+ }
+ 
+ 
+#clear {
+	 height:0;
+	 font-size:1px;
+	 line-height:0px;
+	 clear:both;
+} 
+
+
+.watch { margin-left: 80%;
+         margin-top: 20px;
+     position: absolute;
+	 border-style: ridge;
+	 padding: 5px;
+	}
+
+#seconds{ 
+ 		padding-top: 250px; 
+ 		text-align: center; 
+ 		font-size: 250%; 
+ 	} 
+#minute{ 
+ 		padding-top: 250px; 
+ 		text-align: center; 
+ 		font-size: 250%; 
+ 	} 
+#hour{ 
+ 		padding-top: 250px; 
+ 		text-align: center; 
+ 		font-size: 250%; 
+ 	}
+#tabl1 {
+	border:1px solid;
+	border-color:#00C;
+	margin:auto;
+	width:900px;
+	
+	
+}
+.t_t {
+	background:#0C3;
+}
+
+#tab_cont{
+}
+
+#tabl_preim {
+	background: #ffffff;
+	
+	}
+#tabl_preim{
+}
+
+
+#scrollup {
+	font-family: MagistralC; 
+	text-align: center;
+	position: fixed; /* фиксированная позиция */
+	padding: 15px 10px 10px; /* отступы */
+	left: 10%; /* отступ слева */
+	bottom: 10%; /* отступ снизу */
+	display: none; /* спрятать блок */
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	margin-left: 84%;
+}
+ .vk{
+	 font-family:OfficinaSerifC-Book;
+	 font-size: 110%;
+	 border-radius: 10px;
+	 display: inline-block;
+  	   	 color: #006;
+	 border: 1px solid #fff;
+ 	 text-align: center;
+ 	 outline: none;
+ 	 text-decoration: none;
+}
+.vk:hover,
+.vk:active {
+  background-color: #fff;
+  color: #69C;
+
+ }
+#zak{
+	
+	width: 224px;
+	height: 67px;
+ }
+
+
+
+

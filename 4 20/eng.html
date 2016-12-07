@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <link rel="shortcut icon" href="images/iconka2.png" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Supercomputer "Zubr"</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/kompl.css" rel="stylesheet" type="text/css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="normalize.css">
+
+ <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+
+
+ <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+ <script type="text/javascript">
+jQuery(function($){
+   $("#phone").mask("+7 (999) 999-9999");
+   $("#phone2").mask("+7 (999) 999-9999");
+});
+</script>
+</head>
+
+<body>
+	<div id="container">
+    
+   		<div id="header">
+        
+   		  <div id="logo"> <img src="images/Logotip.png" align="center" /></div>
+           		 <div id="slogan"> 
+              Supercomputer “Zubr” – combination of compactness, reliability and power!
+            	 </div>
+                         <div id="contacts"> 
+                         Hot line:+7 (351)239-94-42<br>
+    			         e-mail: info@lanitural.ru<br>
+    			         Molodogvardeycev str.,31,Chelyabinsk
+                         </div>
+						     
+							 <div id="en"><a href="eng.html"><img src="images/en.png">  </a></div>
+							 <div id="rus"><a href="index.html"><img src="images/rus.png">  </a>  </div>
+   </div>                           
+        
+   	  <div id="content">
+       <div id="tabl1">
+            	<table id="tab_cont">
+                      <tr>
+                        <td class="pic1"><a href="#ind"><img src="images/02.png" width="185" height="163" alt=""/></a>
+                          	<figcaption>  Custom orders </figcaption> 
+                        </td>
+                        <td rowspan="3"><img src="images/Zubr.png" width="350" height="520" alt=""/>
+                       	 
+                        </td>
+                        <td class="pic2"><a href="#dopvozm"><img src="images/03.png" width="185" height="163" alt=""/></a>
+                            <figcaption>  Oppotunities </figcaption>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="pic3"><a href="#preim"><img src="images/01.png" width="185" height="163" alt=""/></a>
+                           <figcaption>  Advantages </figcaption>
+                        </td>
+                        <td class="pic4"><a href="#photo"><img src="images/04.png" width="185" height="163" alt=""/></a>
+                           <figcaption>  Photo gallery </figcaption>
+                        </td></tr>
+                        <tr>
+                        <td></td>
+                        <td></td> 
+                        <td>
+                        
+                        <div id="zak">
+      <div class="content clearfix">
+  <!-- begin post  -->
+  <div class="post">
+    
+
+<a href="#inline" class="modalbox">Text us</a>
+<a href="vopros-otvet.html" class="modalbox">Q/A</a>
+
+<div id="inline">
+  <h2>Ask us a question</h2>
+  <form id="contact" name="contact" action="#" method="post">
+    <input type="name" id="name" name="name" class="txt" placeholder="Your name">
+    <input type="phone" id="phone" name="phone" class="txt" placeholder="Your phone number">
+    <input type="email" id="email" name="email" class="txt" placeholder="Your e-mail"> 
+    <textarea id="msg" name="msg" class="txtarea"  placeholder="Your message:"></textarea>
+    <button id="send">send</button>
+  </form>
+</div>
+
+</div>
+<!-- end post -->
+	<!-- end content -->
+
+
+<script type="text/javascript">
+  function validateEmail(email) { 
+    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return reg.test(email);
+  }
+
+  $(document).ready(function() {
+    $(".modalbox").fancybox();
+    $("#contact").submit(function() { return false; });
+    $("#send").on("click", function(){
+      var emailval  = $("#email").val();
+      var namevl  = $("#name").val();
+      var phonevl  = $("#phone").val();
+      var msgval    = $("#msg").val();
+      var msglen    = msgval.length;
+      var mailvalid = validateEmail(emailval);
+
+      if(mailvalid == false) {
+        $("#email").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#email").removeClass("error");
+      }
+  if(mailvalid == false) {
+        $("#name").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#name").removeClass("error");
+      }
+      if(mailvalid == false) {
+        $("#phone").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#phone").removeClass("error");
+      }
+      if(msglen < 4) {
+        $("#msg").addClass("error");
+      }
+      else if(msglen >= 4){
+        $("#msg").removeClass("error");
+      }
+      
+      if(mailvalid == true && msglen >= 4) {
+        // если обе проверки пройдены
+        // сначала мы скрываем кнопку отправки
+        $("#send").replaceWith("<em>отправка...</em>");
+        $.ajax({
+          type: 'POST',
+          url: 'sendmessage.php',
+          data: $("#contact").serialize(),
+          success: function(data) {
+            if(data == "true") {
+              $("#contact").fadeOut("fast", function(){
+                $(this).before("<p><strong> Succes! Your message have been sent  :)</strong></p>");
+                setTimeout("$.fancybox.close()", 1000);
+              });
+            }
+          }
+        });
+      }
+    });
+  });
+</script>
+</div>
+
+      </div>
+      </td>
+                      </tr>
+         </table>
+
+
+            
+        </div>
+          <div class="watch">
+            <script type="text/javascript"> 
+	var s = 60;
+	var m = 59;
+	var h = 2;
+    setTimeout(timer_increment, 1000); 
+ 	function timer_increment() { 
+ 		s--; 
+ 		$("#seconds").html(s);
+		$("#minute").html(m);
+		$("#hour").html(h);
+        setTimeout(timer_increment, 1000);
+			
+        if (s==1) { m--;
+		s=60;
+		if (m==-1) { h--;
+		}
+		
+		} 
+   
+		}
+	
+	
+              </script> 
+           <span id="hour">	 2 </span> hour <span id="minute">	 59 </span>min <span id="seconds"> 60 </span>sec
+          </div>
+       
+          
+</div>
+                        
+                     
+                   
+
+
+       
+          
+</div>
+
+           <a name="dopvozm"></a>  
+	<div class="dopvozm"> <font align="center" face="robotolightitalic" ><h2> Extra abilities </h2>
+             <img src="images/0033.jpeg" alt= "красивая картинка" width="400" height="300" align=right border=2 hspace="50"/>
+						
+           <p> I. Using the rental services of computing power, connected to a running supercomputers "Zubr" computing
+             Center VNIITF.</p>
+            <br> <br>
+            <p> II. Clients can instal licensed, proprietary or any available in source code software.</p>
+            <br>
+			<p> III. .Questions related to compilation and use of customer programs can be solved in cooperation with the administrators. </p>
+	    <br><br> <a href="http://vniitf.ru/vse-kommercheskie-predlozheniya/1106-o-276"> More... </a> 
+						</font>
+		
+		
+           
+             </div>
+             
+             
+               <div class="tabl">
+     <table id="tabl_preim" aling="left" cellspacing="0" cellpadding="10" border="0">
+<font size="4"> <tbody> <tr><th> </th><th> 1st equipment </th><th> 2nd equipment </th></tr>
+
+<tr >
+	<td>Processor type</td>
+		<td class="pr"> CPU:
+    		<ul>
+				<ol>AMD Opteron 6100</ol>
+        		<ol>AMD Opteron 6200</ol>
+        		<ol>AMD Opteron 6300</ol>
+				<ol>Intel Westmere</ol>
+				<ol>Intel Sandy Bridge</ol>
+			</ul>	
+    	</td>
+		<td class="pr"> CPU+GPU:
+    		<ul>
+				<ol>&emsp; &emsp; M 2090</ol>
+        		<ol>&emsp; &emsp; M 2070</ol>
+        		<ol>&emsp; &emsp; M 2050</ol>
+				<ol>&emsp; &emsp; K 20 Nvidia</ol>
+				<ol>&emsp; &emsp; Phi Xeon</ol>
+			</ul> 
+    	</td>
+</tr>
+
+<tr><td>Peak productivity</td><td>less then 13,3 Тфлоп/с</td><td>less then 20 Тфлоп/с</td></tr>
+
+<tr><td>Random access memory
+</td><td>1-2 Тбайт</td><td>0,4-0,8Тбайт</td></tr>
+
+<tr><td>Bandwidth messaging system</td><td>40 Гбит/с</td><td>40 Гбит/с</td></tr>
+
+<tr><td>The internal storage system</td><td>80terabytes</td><td>80terabytes</td></tr>
+
+<tr><td>Access to external storage systems</td><td>through the InfiniBand and Ethernet</td><td>through InfiniBand and Ethernet</td></tr>
+
+<tr><td>Work time</td><td colspan="2">non-stop,jobs autostart from the queue</td></tr>
+
+<tr><td>APN user access organization</td><td>through the channel Ethernet to 10 Гбит/с</td><td>through the channel Ethernet to 10 Гбит/с</td></tr>
+
+<tr><td>Automatic response to emergency situations</td><td colspan="2">the disappearance of an external power supply, cooling system failure, fire</td></tr>
+
+<tr><td>Power consumption</td><td>less then 40кВт</td><td>less then 40кВт</td></tr>
+
+<tr><td>Dimensions</td><td>1600*1200*2400 mm</td><td>1600*1200*2400 mm</td></tr>
+
+<tr><td>Weight</td><td>less then 600 kg</td><td>less then 600 kg</td></tr>
+
+</tbody></table>
+
+
+
+    <a name="preim"></a>
+         <div class="preim"> 
+	<font align="center"> <h2> Obvious advantages: </h2>
+	<p>  I. The base configuration has a minimum performance of 10 teraflops;</p>
+	<p>II. Compact design. Computer system placed in the small cabinet, uninterruptible power systems, cooling systems and fire extinguishing system. This arrangement allows all systems to establish supercomputer "Zubr" in an ordinary room, which does not require special training;</p>
+	
+	<br> <br> <p>III.  System-wide set of basic software is set in any "Zubr" configuration that allows :
+	<ul type="circle"></font> 
+		<li>  application development;</li>
+		<li> Automatic monitoring of all supercomputer systems "Zubr";</li>
+		<li>  Automatic capacity planning tasks and management of their passage;</li>
+		<li>  Automatic response to malfunctions, failures localization and, if necessary, correct off supercomputer.</li></p>
+	</ul>
+</div>
+     
+                          </div><a name="ind"></a> 
+						  
+						  
+						  <a name="ind"></a> 
+                            
+							<div class="ind" >
+                              <h2 align="center"> Complete set of customized </h2>
+<hr size="5">
+
+      <img src="images/Z7dSOqeg3dk.jpg" align="left" hspace="10" vspace="20" >
+    Productivity of "Zubr" <b>Scales easily</b>. The base configuration has a minimum productivity of 10 teraflops.
+<p>
+On the basis of the basic configuration, customized, it is possible to assemble a supercomputer <b>any</b> productivity in the range of 10 ... 100 teraflops (in increments of 10 teraflops).
+<p>By increasing (enhancing) the performance <b> ensures the safety of its properties as a single supercomputer</b>. </p> 
+
+<img src="images/12.png" align="left" hspace="10" vspace="5">
+ Completeness (types of CPU processors and their number, the presence of GPU accelerators and their number, the capacity of operational and external memory) <b>depends on the desire of the customer</b>
+<p> If you purchased a supercomputer experts VNIITF perform the installation and certification of networks, install and run the machine, ensure efficiency <b>all</b> systems, will help <b>to learn how to use the supercomputer!</b> 
+                             </div>
+     
+     
+      			<a name="photo"></a>
+					<div class="photo">
+                 
+						<div class="prd"> <img src="images/prd2.png"> Hold and tang!! <img src="images/prd2.png">
+						</div>
+                 
+       <ul id="elasticstack" class="elasticstack">
+				<li><img src="img/1.jpg" alt="01"/></li>
+				<li><img src="img/2.jpg" alt="02" /></li>
+				<li><img src="img/3.jpg" alt="03" /></li>
+				<li><img src="img/4.jpg" alt="04" /></li>
+				<li><img src="img/5.jpg" alt="05"  /></li>
+				<li><img src="img/6.jpg" alt="06" /></li>
+				<li><img src="img/7.jpg" alt="07" /></li>
+			</ul>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/elastiStack.js"></script>
+		<script>
+			new ElastiStack( document.getElementById( 'elasticstack' ) );
+		</script>
+					</div>
+       
+       
+       
+	   
+		<div class="foot">
+	 <hr size="5">
+	 
+	 
+                    <table id="tabl_foot">
+ <br />
+                    <br />
+						<tr>
+                         <td>
+                        <div class="vk">
+            <a href="https://vk.com/ingenerika"><button class="vk"><img src="images/vk.png" width="150" /></button></a>
+			</div>
+           				 </td>
+           				<td rowspan="2">
+							
+		<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=M7lUWf4hq1xXPn24-XJPRZ1QmcDxz-xp&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+							</td>
+            			</tr>
+                        
+                        <tr>
+                       
+                        <td>
+							<table>
+                       
+                      </table> 
+										<font size="2" align="center" >					  
+					  ООО «Lanit-Ural»
+	<p>Сайт : www.lanitural.ru
+	<p>Тел.: +7 (351)239-94-42
+	<p>e-mail: info@lanitural.ru
+	<p>454021,office 51,ITpark, Molodogvardeycev street, Chelyabinsk
+
+	<p>Hot line:8-800-200-9442(call is free)
+										</font>
+							</td>
+						
+                            </tr>
+                            </table>
+							
+
+       <div id="scrollup"><img src="images/up.png"> <font size="3"> up</font> </div>
+	   
+	   
+	   
+			<script type="text/javascript">
+	    
+
+	var scrollUp = document.getElementById('scrollup'); // найти элемент
+
+	scrollUp.onmouseover = function() { // добавить прозрачность
+		scrollUp.style.opacity=0.3;
+		scrollUp.style.filter  = 'alpha(opacity=30)';
+	};
+
+	scrollUp.onmouseout = function() { //убрать прозрачность
+		scrollUp.style.opacity = 0.5;
+		scrollUp.style.filter  = 'alpha(opacity=50)';
+	};
+
+	scrollUp.onclick = function() { //обработка клика
+		window.scrollTo(0,0);
+	};
+
+// show button
+
+	window.onscroll = function () { // при скролле показывать и прятать блок
+		if ( window.pageYOffset > 0 ) {
+			scrollUp.style.display = 'block';
+		} else {
+			scrollUp.style.display = 'none';
+		}
+	};
+
+			</script>
+                                 	
+						</div>
+						</div> 
+
+
+
+</div>
+      
+  
+
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <link rel="shortcut icon" href="images/iconka2.png" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Суперкомпьютер "ЗУБР"</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/kompl.css" rel="stylesheet" type="text/css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="normalize.css">
+
+ <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+
+
+ <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+ <script type="text/javascript">
+jQuery(function($){
+   $("#phone").mask("+7 (999) 999-9999");
+   $("#phone2").mask("+7 (999) 999-9999");
+});
+</script>
+</head>
+
+<body>
+	<div id="container">
+    
+   		<div id="header">
+        
+   		  <div id="logo"> <img src="images/Logotip.png" align="center" /></div>
+           		 <div id="slogan"> 
+              Суперкомпьютер "Зубр" - сочетание мощности, компактности и надежности!
+            	 </div>
+                         <div id="contacts"> 
+                         Горячая линия:+7 (351)239-94-42<br>
+    			         e-mail: info@lanitural.ru<br>
+    			         г. Челябинск, ул. Молодогвардейцев, д. 31
+                         </div>
+						     
+							 <div id="en"><a href="eng.html"><img src="images/en.png">  </a></div>
+							 <div id="rus"><a href="index.html"><img src="images/rus.png">  </a>  </div>
+   </div>                           
+        
+   	  <div id="content">
+       <div id="tabl1">
+            	<table id="tab_cont">
+                      <tr>
+                        <td class="pic1"><a href="#ind"><img src="images/02.png" width="185" height="163" alt=""/></a>
+                          	<figcaption>  Индивидуальные заказы </figcaption> 
+                        </td>
+                        <td rowspan="3"><img src="images/Zubr.png" width="350" height="520" alt=""/>
+                       	 
+                        </td>
+                        <td class="pic2"><a href="#dopvozm"><img src="images/03.png" width="185" height="163" alt=""/></a>
+                            <figcaption>  Возможности </figcaption>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="pic3"><a href="#preim"><img src="images/01.png" width="185" height="163" alt=""/></a>
+                           <figcaption>  Преимущества </figcaption>
+                        </td>
+                        <td class="pic4"><a href="#photo"><img src="images/04.png" width="185" height="163" alt=""/></a>
+                           <figcaption>  Фотогалерея </figcaption>
+                        </td></tr>
+                        <tr>
+                        <td></td>
+                        <td></td> 
+                        <td>
+                        
+                        <div id="zak">
+      <div class="content clearfix">
+  <!-- begin post  -->
+  <div class="post">
+    
+
+<a href="#inline" class="modalbox">Связаться с нами</a>
+<a href="vopros-otvet.html" class="modalbox">Вопрос/ответ</a>
+
+<div id="inline">
+  <h2>Задайте нам вопрос</h2>
+  <form id="contact" name="contact" action="#" method="post">
+    <input type="name" id="name" name="name" class="txt" placeholder="Ваше имя">
+    <input type="phone" id="phone" name="phone" class="txt" placeholder="Ваш телефон">
+    <input type="email" id="email" name="email" class="txt" placeholder="Ваш e-mail"> 
+    <textarea id="msg" name="msg" class="txtarea"  placeholder="Ваше сообщение:"></textarea>
+    <button id="send">Отправить</button>
+  </form>
+</div>
+
+</div>
+<!-- end post -->
+	<!-- end content -->
+
+
+<script type="text/javascript">
+  function validateEmail(email) { 
+    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return reg.test(email);
+  }
+
+  $(document).ready(function() {
+    $(".modalbox").fancybox();
+    $("#contact").submit(function() { return false; });
+    $("#send").on("click", function(){
+      var emailval  = $("#email").val();
+      var namevl  = $("#name").val();
+      var phonevl  = $("#phone").val();
+      var msgval    = $("#msg").val();
+      var msglen    = msgval.length;
+      var mailvalid = validateEmail(emailval);
+
+      if(mailvalid == false) {
+        $("#email").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#email").removeClass("error");
+      }
+  if(mailvalid == false) {
+        $("#name").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#name").removeClass("error");
+      }
+      if(mailvalid == false) {
+        $("#phone").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#phone").removeClass("error");
+      }
+      if(msglen < 4) {
+        $("#msg").addClass("error");
+      }
+      else if(msglen >= 4){
+        $("#msg").removeClass("error");
+      }
+      
+      if(mailvalid == true && msglen >= 4) {
+        // если обе проверки пройдены
+        // сначала мы скрываем кнопку отправки
+        $("#send").replaceWith("<em>отправка...</em>");
+        $.ajax({
+          type: 'POST',
+          url: 'sendmessage.php',
+          data: $("#contact").serialize(),
+          success: function(data) {
+            if(data == "true") {
+              $("#contact").fadeOut("fast", function(){
+                $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+                setTimeout("$.fancybox.close()", 1000);
+              });
+            }
+          }
+        });
+      }
+    });
+  });
+</script>
+</div>
+
+      </div>
+      </td>
+                      </tr>
+         </table>
+
+
+            
+        </div>
+          <div class="watch">
+            <script type="text/javascript"> 
+	var s = 60;
+	var m = 59;
+	var h = 2;
+    setTimeout(timer_increment, 1000); 
+ 	function timer_increment() { 
+ 		s--; 
+ 		$("#seconds").html(s);
+		$("#minute").html(m);
+		$("#hour").html(h);
+        setTimeout(timer_increment, 1000);
+			
+        if (s==1) { m--;
+		s=60;
+		if (m==-1) { h--;
+		}
+		
+		} 
+   
+		}
+	
+	
+              </script> 
+           <span id="hour">	 2 </span> hour <span id="minute">	 59 </span>min <span id="seconds"> 60 </span>sec
+          </div>
+       
+          
+</div>
+                        
+
+          
+</div>
+
+           <a name="dopvozm"></a>  
+	<div class="dopvozm"> <font align="center" face="robotolightitalic" ><h2> Дополнительные возможности </h2>
+             <img src="images/0033.jpeg" alt= "красивая картинка" width="400" height="300" align=right border=2 hspace="50"/>
+						
+           <p> I. Пользование услугами аренды вычислительных  мощностей, 
+            подключившись  к   работающему  Суперкомпьютеру  «ЗУБР»  вычислительного 
+            центра РФЯЦ-ВНИИТФ.</p>
+            <br> <br>
+            <p> II. По желанию клиентов на Суперкомпьютере “Зубр” может быть установлено любое, совместимое по системным 
+            компонентам  лицензионное,  проприетарное  (Вами  разработанное  или  свободно  распространяемое  программное 
+            обеспечение в двоичных кодах) или иное доступное в исходных кодах программное обеспечение.</p>
+            <br>
+			<p> III. Все вопросы по компиляции и использованию программ клиентов могут быть решены совместно с администраторами 
+            Суперкомпьютера  “Зубр”. При необходимости,  возможно организовать проведение презентаций, семинаров и  курсов 
+            обучения для потенциальных клиентов.</p>
+	    <br><br> <a href="http://vniitf.ru/vse-kommercheskie-predlozheniya/1106-o-276"> Подробнее... </a> 
+						</font>
+		
+		
+           
+             </div>
+             
+             
+               <div class="tabl">
+     <table id="tabl_preim" aling="left" cellspacing="0" cellpadding="10" border="0">
+<font size="4"> <tbody> <tr><th> </th><th> 1 комплектация </th><th> 2 комплектация </th></tr>
+
+<tr >
+	<td>Тип процессора</td>
+		<td class="pr"> CPU:
+    		<ul>
+				<ol>AMD Opteron 6100</ol>
+        		<ol>AMD Opteron 6200</ol>
+        		<ol>AMD Opteron 6300</ol>
+				<ol>Intel Westmere</ol>
+				<ol>Intel Sandy Bridge</ol>
+			</ul>	
+    	</td>
+		<td class="pr"> CPU+GPU:
+    		<ul>
+				<ol>&emsp; &emsp; M 2090</ol>
+        		<ol>&emsp; &emsp; M 2070</ol>
+        		<ol>&emsp; &emsp; M 2050</ol>
+				<ol>&emsp; &emsp; K 20 Nvidia</ol>
+				<ol>&emsp; &emsp; Phi Xeon</ol>
+			</ul> 
+    	</td>
+</tr>
+
+<tr><td>Пиковая производительность</td><td>Не более 13,3 Тфлоп/с</td><td>Не более 20 Тфлоп/с</td></tr>
+
+<tr><td>Оперативная память</td><td>1-2 Тбайт</td><td>0,4-0,8Тбайт</td></tr>
+
+<tr><td>Пропускная способность системы передачи сообщений</td><td>40 Гбит/с</td><td>40 Гбит/с</td></tr>
+
+<tr><td>Внутренняя система хранения</td><td>80Тбайт</td><td>80Тбайт</td></tr>
+
+<tr><td>Доступ к внешним системам хранения</td><td>через InfiniBand и Ethernet</td><td>через InfiniBand и Ethernet</td></tr>
+
+<tr><td>Режим работы</td><td colspan="2">круглосуточный, автоматический запуск заданий из очереди</td></tr>
+
+<tr><td>Организация доступа APM пользователей</td><td>по каналам Ethernet до 10 Гбит/с</td><td>по каналам Ethernet до 10 Гбит/с</td></tr>
+
+<tr><td>Автоматическая реакция на нештатные ситуации</td><td colspan="2">исчезновение внешнего питания, отказ системы охлаждения, возгорание</td></tr>
+
+<tr><td>Потребляемая мощность</td><td>не более 40кВт</td><td>не более 40кВт</td></tr>
+
+<tr><td>Габаритные размеры(без наружнего блока)</td><td>1600*1200*2400 мм</td><td>1600*1200*2400 мм</td></tr>
+
+<tr><td>Масса(без наружнего блока)</td><td>не более 600 кг</td><td>не более 600 кг</td></tr>
+
+</tbody></table>
+
+
+
+    <a name="preim"></a>
+         <div class="preim"> 
+	<font align="center"> <h2> Очевидные преимущества: </h2>
+	<p>  I. Базовая конфигурация имеет минимальную производительность 10 терафлоп;</p>
+	<p>II. Компактное исполнение. В шкафу небольшого размера размещены вычислительная система, система бесперебойного питания, система охлаждения и система пожаротушения. Такая компоновка всех систем позволяет установить суперкомпьютер «Зубр» в обычное помещение, не требующее специальной подготовки;</p>
+	
+	<br> <br> <p>III. На любой конфигурации «Зубра» устанавливается комплект базового общесистемного программного обеспечения, позволяющего выполнять:
+	<ul type="circle"></font> 
+		<li>  разработку прикладных программ;</li>
+		<li> автоматический мониторинг всех систем суперкомпьютера «Зубр»,;</li>
+		<li>  автоматическое планирование загрузкой заданий и управление их прохождением;</li>
+		<li>  автоматическую реакцию на сбои, локализацию сбоев и, при необходимости, корректное выключение суперкомпьютера.</li></p>
+	</ul>
+</div>
+     
+                          </div><a name="ind"></a> 
+						  
+						  
+						  <a name="ind"></a> 
+                            
+							<div class="ind" >
+                              <h2 align="center"> Комплектации по индивидуальному заказу </h2>
+<hr size="5">
+
+      <img src="images/Z7dSOqeg3dk.jpg" align="left" hspace="10" vspace="20" >
+     Производительность «Зубра» <b>легко масштабируется</b>. Базовая конфигурация имеет минимальную производительность 10 терафлоп.
+<p>На основе базовой конфигурации, по индивидуальному заказу, можно собрать суперкомпьютер <b>любой</b> производительности в диапазоне 10 … 100 терафлоп (с шагом в 10 терафлоп).
+<p>При увеличении (наращивании) производительности <b>обеспечивается сохранность его свойств как единого суперкомпьютера</b>. </p> 
+
+<img src="images/12.png" align="left" hspace="10" vspace="5">
+ Комплектность (типы процессоров CPU и их количество, наличие ускорителей GPU и их количество, емкость оперативной и внешней памяти) <b>определяется желанием заказчика!</b>
+<p> В случае приобретения суперкомпьютера специалисты РФЯЦ-ВНИИТФ выполнят монтаж и аттестацию сетей, установят и запустят машину, обеспечат работоспособность <b>всех</b> систем, помогут заказчику <b>освоить суперкомпьютер в кратчайшие сроки!</b> 
+                             </div>
+     
+     
+      			<a name="photo"></a>
+					<div class="photo">
+                 
+						<div class="prd"> <img src="images/prd2.png"> Зажми и тащи! <img src="images/prd2.png">
+						</div>
+                 
+       <ul id="elasticstack" class="elasticstack">
+				<li><img src="img/1.jpg" alt="01"/></li>
+				<li><img src="img/2.jpg" alt="02" /></li>
+				<li><img src="img/3.jpg" alt="03" /></li>
+				<li><img src="img/4.jpg" alt="04" /></li>
+				<li><img src="img/5.jpg" alt="05"  /></li>
+				<li><img src="img/6.jpg" alt="06" /></li>
+				<li><img src="img/7.jpg" alt="07" /></li>
+			</ul>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/elastiStack.js"></script>
+		<script>
+			new ElastiStack( document.getElementById( 'elasticstack' ) );
+		</script>
+					</div>
+       
+       
+       
+	   
+		<div class="foot">
+	 <hr size="5">
+	 
+	 
+                    <table id="tabl_foot">
+ <br />
+                    <br />
+						<tr>
+                         <td>
+                        <div class="vk">
+            <a href="https://vk.com/ingenerika"><button class="vk"><img src="images/vk.png" width="150" /></button></a>
+			</div>
+           				 </td>
+           				<td rowspan="2">
+							
+		<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=M7lUWf4hq1xXPn24-XJPRZ1QmcDxz-xp&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+							</td>
+            			</tr>
+                        
+                        <tr>
+                       
+                        <td>
+							<table>
+                       
+                      </table> 
+										<font size="2" align="center" >					  
+					  ООО «ЛАНИТ-Урал»
+	<p>Сайт : www.lanitural.ru
+	<p>Тел.: +7 (351)239-94-42
+	<p>e-mail: info@lanitural.ru
+	<p>454021,г. Челябинск, ул. Молодогвардейцев, д. 31, ИТ-Парк, офис 51
+
+	<p>Горячая линия:8-800-200-9442(звонок бесплатный)
+										</font>
+							</td>
+						
+                            </tr>
+                            </table>
+							
+
+       <div id="scrollup"><img src="images/up.png"> <font size="3"> Наверх</font> </div>
+	   
+	   
+	   
+			<script type="text/javascript">
+	    
+
+	var scrollUp = document.getElementById('scrollup'); // найти элемент
+
+	scrollUp.onmouseover = function() { // добавить прозрачность
+		scrollUp.style.opacity=0.3;
+		scrollUp.style.filter  = 'alpha(opacity=30)';
+	};
+
+	scrollUp.onmouseout = function() { //убрать прозрачность
+		scrollUp.style.opacity = 0.5;
+		scrollUp.style.filter  = 'alpha(opacity=50)';
+	};
+
+	scrollUp.onclick = function() { //обработка клика
+		window.scrollTo(0,0);
+	};
+
+// show button
+
+	window.onscroll = function () { // при скролле показывать и прятать блок
+		if ( window.pageYOffset > 0 ) {
+			scrollUp.style.display = 'block';
+		} else {
+			scrollUp.style.display = 'none';
+		}
+	};
+
+			</script>
+                                 	
+						</div>
+						</div> 
+
+
+
+</div>
+      
+  
+
+
+</body>
+</html>
